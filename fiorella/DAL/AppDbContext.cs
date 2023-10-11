@@ -21,5 +21,17 @@ namespace fiorella.DAL
         public DbSet<BlogTag> BlogTags { get; set; }
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Location> Locations { get; set; }
+        public DbSet<OurTeam> OurTeams { get; set; }
+        public DbSet<OurPerformance> OurPerformances { get; set; }
+        public DbSet<Color> Colors { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductColor> ProductColors { get; set; }
+        public DbSet<ProductImage> ProductImages { get; set; }
+        public DbSet<ProtuctTag> ProtuctTags { get; set; }
+        public DbSet<PTag> PTags { get; set; }
+        public DbSet<Provide> Provides { get; set; }
+
+
     }
 }

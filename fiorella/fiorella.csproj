@@ -7,6 +7,12 @@
   <ItemGroup>
     <Compile Remove="Migrations\20230905213554_BlogAndBlogRelationCreated.cs" />
     <Compile Remove="Migrations\20230905213554_BlogAndBlogRelationCreated.Designer.cs" />
+    <Compile Remove="Migrations\20230905213915_BlogAndBlogRelationCreated.cs" />
+    <Compile Remove="Migrations\20230905213915_BlogAndBlogRelationCreated.Designer.cs" />
+    <Compile Remove="Migrations\20230905215215_CreateLocationTable.cs" />
+    <Compile Remove="Migrations\20230905215215_CreateLocationTable.Designer.cs" />
+    <Compile Remove="Migrations\20231011071909_CreateOurTeamTable.cs" />
+    <Compile Remove="Migrations\20231011071909_CreateOurTeamTable.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,6 +25,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 

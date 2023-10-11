@@ -8,8 +8,14 @@ namespace fiorella.Controllers
 {
     public class ShopController : Controller
     {
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            return View();
+        }
+
+        public async Task<IActionResult> ShopDetail()
+        {
+
             return View();
         }
     }

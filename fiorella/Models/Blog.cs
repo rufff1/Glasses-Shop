@@ -35,7 +35,7 @@ namespace fiorella.Models
         public IEnumerable<BlogTag> BlogTags { get; set; }
         //one to many category
         public Category Category { get; set; }
-        public int BlogId { get; set; }
+        public int CategoryId { get; set; }
 
     }
 }

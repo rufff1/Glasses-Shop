@@ -14,5 +14,6 @@ namespace fiorella.Models
 
 
         public IEnumerable<Blog> Blogs { get; set; }
+        public IEnumerable<Product> Products { get; set; }
     }
 }
