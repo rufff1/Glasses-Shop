@@ -30,6 +30,10 @@ namespace fiorella.Models
         [StringLength(50)]
         public string Author { get; set; }
 
+        [Required]
+        [StringLength(40)]
+        public DateTime BlogDate { get; set; }
+
 
         //many to many tags
         public IEnumerable<BlogTag> BlogTags { get; set; }

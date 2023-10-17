@@ -33,8 +33,29 @@ using fiorella.DAL;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\Users\ROG\source\repos\Fiorella\fiorella\Views\_ViewImports.cshtml"
+using fiorella.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "C:\Users\ROG\source\repos\Fiorella\fiorella\Views\_ViewImports.cshtml"
+using fiorella.Helpers;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 7 "C:\Users\ROG\source\repos\Fiorella\fiorella\Views\_ViewImports.cshtml"
+using fiorella.Extensions;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8e35bc2e17cf0e4d137c61f66ff1c58eb8e3287d", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"be121f4a2adb768ec9fa82d2fb006cbe4dc9f61a", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

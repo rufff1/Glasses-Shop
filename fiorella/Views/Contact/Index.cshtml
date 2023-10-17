@@ -1,4 +1,6 @@
-﻿<main class="main pages">
+﻿@model IEnumerable<Location>
+
+<main class="main pages">
     <div class="page-header breadcrumb-wrap">
         <div class="container">
             <div class="breadcrumb">
@@ -52,30 +54,20 @@
                 <div class="col-xl-10 col-lg-12 m-auto">
                     <section class="mb-50">
                         <div class="row mb-60">
+
+                            @foreach (var item in Model)
+                            {
                             <div class="col-md-4 mb-4 mb-md-0">
-                                <h4 class="mb-15 text-brand">Office</h4>
-                                205 North Michigan Avenue, Suite 810<br />
-                                Chicago, 60601, USA<br />
-                                <abbr title="Phone">Phone:</abbr> (123) 456-7890<br />
-                                <abbr title="Email">Email: </abbr>contact@Evara.com<br />
+                                @item.Adress<br />
+                                @item.City<br />
+                                <abbr title="Phone" typeof="phone">Phone:</abbr> @item.Phone<br />
+                                <abbr typeof="phone" title="Email">Email: </abbr>@item.Email<br />
                                 <a class="btn btn-sm font-weight-bold text-white mt-20 border-radius-5 btn-shadow-brand hover-up"><i class="fi-rs-marker mr-5"></i>View map</a>
                             </div>
-                            <div class="col-md-4 mb-4 mb-md-0">
-                                <h4 class="mb-15 text-brand">Studio</h4>
-                                205 North Michigan Avenue, Suite 810<br />
-                                Chicago, 60601, USA<br />
-                                <abbr title="Phone">Phone:</abbr> (123) 456-7890<br />
-                                <abbr title="Email">Email: </abbr>contact@Evara.com<br />
-                                <a class="btn btn-sm font-weight-bold text-white mt-20 border-radius-5 btn-shadow-brand hover-up"><i class="fi-rs-marker mr-5"></i>View map</a>
-                            </div>
-                            <div class="col-md-4">
-                                <h4 class="mb-15 text-brand">Shop</h4>
-                                205 North Michigan Avenue, Suite 810<br />
-                                Chicago, 60601, USA<br />
-                                <abbr title="Phone">Phone:</abbr> (123) 456-7890<br />
-                                <abbr title="Email">Email: </abbr>contact@Evara.com<br />
-                                <a class="btn btn-sm font-weight-bold text-white mt-20 border-radius-5 btn-shadow-brand hover-up"><i class="fi-rs-marker mr-5"></i>View map</a>
-                            </div>
+
+                            }
+
+                            
                         </div>
                         <div class="row">
                             <div class="col-xl-8">

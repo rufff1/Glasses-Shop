@@ -6,20 +6,15 @@ using System.Threading.Tasks;
 
 namespace fiorella.Models
 {
-    public class OurPerformance :BaseEntitiy
+    public class ExpertMeet :BaseEntitiy
     {
-        [StringLength(150)]
-        [Required]
-        public string Image { get; set; }
-        [StringLength(150)]
+        [StringLength(250)]
         [Required]
         public string Title { get; set; }
         [StringLength(1000)]
         [Required]
-        public string Descriptoion1 { get; set; }
+        public string Description1 { get; set; }
         [StringLength(1000)]
-        [Required]
-        public string Descriptoion2 { get; set; }
-
+        public string Description2 { get; set; }
     }
 }

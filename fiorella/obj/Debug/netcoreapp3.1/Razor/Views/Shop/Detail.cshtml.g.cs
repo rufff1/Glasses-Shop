@@ -33,8 +33,29 @@ using fiorella.DAL;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\Users\ROG\source\repos\Fiorella\fiorella\Views\_ViewImports.cshtml"
+using fiorella.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "C:\Users\ROG\source\repos\Fiorella\fiorella\Views\_ViewImports.cshtml"
+using fiorella.Helpers;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 7 "C:\Users\ROG\source\repos\Fiorella\fiorella\Views\_ViewImports.cshtml"
+using fiorella.Extensions;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"16d42846bf9cda62a0d0910a2f2abddb0581f857", @"/Views/Shop/Detail.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8e35bc2e17cf0e4d137c61f66ff1c58eb8e3287d", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"be121f4a2adb768ec9fa82d2fb006cbe4dc9f61a", @"/Views/_ViewImports.cshtml")]
     public class Views_Shop_Detail : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("form-contact comment_form"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -523,7 +544,7 @@ using fiorella.DAL;
                                             <div class=""product-rate d-inline-block mb-30""></div>
                     ");
             WriteLiteral("                        <div class=\"row\">\r\n                                                <div class=\"col-lg-8 col-md-12\">\r\n                                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "16d42846bf9cda62a0d0910a2f2abddb0581f85741740", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "16d42846bf9cda62a0d0910a2f2abddb0581f85742271", async() => {
                 WriteLiteral(@"
                                                         <div class=""row"">
                                                             <div class=""col-12"">

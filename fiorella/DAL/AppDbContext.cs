@@ -31,6 +31,9 @@ namespace fiorella.DAL
         public DbSet<ProtuctTag> ProtuctTags { get; set; }
         public DbSet<PTag> PTags { get; set; }
         public DbSet<Provide> Provides { get; set; }
+        public DbSet<WelcomeNest> WelcomeNests { get; set; }
+        public DbSet<ExpertMeet> ExpertMeets { get; set; }
+       
 
 
     }

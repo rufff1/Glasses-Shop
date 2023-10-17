@@ -12,7 +12,7 @@ namespace fiorella.Models
         [Required]
         public string Name { get; set; }
 
-
+        public string Image { get; set; }
         public IEnumerable<Blog> Blogs { get; set; }
         public IEnumerable<Product> Products { get; set; }
     }

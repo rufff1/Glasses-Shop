@@ -13,6 +13,8 @@
     <Compile Remove="Migrations\20230905215215_CreateLocationTable.Designer.cs" />
     <Compile Remove="Migrations\20231011071909_CreateOurTeamTable.cs" />
     <Compile Remove="Migrations\20231011071909_CreateOurTeamTable.Designer.cs" />
+    <Compile Remove="Migrations\20231012060349_CreateExpertMeetTable.cs" />
+    <Compile Remove="Migrations\20231012060349_CreateExpertMeetTable.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
