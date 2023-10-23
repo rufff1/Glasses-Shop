@@ -168,3 +168,5 @@ C:\Users\ROG\source\repos\Fiorella\fiorella\bin\Debug\netcoreapp3.1\ru\Microsoft
 C:\Users\ROG\source\repos\Fiorella\fiorella\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\ROG\source\repos\Fiorella\fiorella\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\ROG\source\repos\Fiorella\fiorella\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ROG\source\repos\Fiorella\fiorella\obj\Debug\netcoreapp3.1\Razor\Views\Blog\BlogDetail.cshtml.g.cs
+C:\Users\ROG\source\repos\Fiorella\fiorella\obj\Debug\netcoreapp3.1\Razor\Views\Blog\TagFindBlog.cshtml.g.cs

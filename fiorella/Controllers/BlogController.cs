@@ -51,6 +51,89 @@ namespace fiorella.Controllers
             return View(blogVM);
         }
             
+        public async Task<IActionResult> BlogDetail(int? id)
+        {
+            if (! await _context.Blogs.AnyAsync(b=> b.Id == id))
+            {
+                return NotFound("Melumat yalnisdir");
+            }
+
+            BlogVM blogVM = new BlogVM()
+            {
+                Blog = await _context.Blogs
+                .Include(b=> b.Category)
+                 .Include(b=> b.BlogTags)
+                 .ThenInclude(bt=> bt.Tag)
+                .FirstOrDefaultAsync(b=> b.IsDeleted == false)
+
+            };
+
+            return View(blogVM);
+        }
+
+
+        public async Task<IActionResult> TagFindBlog(int? id)
+        {
+
+
+        
+
+            BlogVM blogVM = new BlogVM()
+            {
+                Blogs = await _context.Blogs
+                .Include(b => b.Category)
+                .Include(b => b.BlogTags)
+                .ThenInclude(bt => bt.Tag)
+                .Where(b => b.IsDeleted == false  && b.BlogTags.Any(b=> b.TagId == id)).ToListAsync()
+            };
+
+
+            if (blogVM.Blogs==null)
+            {
+                return NotFound("Id tapilmadi");
+            }
+
+
+            if (blogVM.Blogs.Count()== 0)
+            {
+                return NotFound("Bu Tagle babgli blog yoxdur");
+            }
+
+
+            return View(blogVM);
+
+        }
+
+
+        public async Task<IActionResult> GetCategoryBlog(int? id)
+        {
+
+
+
+            BlogVM blogVM = new BlogVM()
+            {
+                Blogs = await _context.Blogs
+                .Include(b => b.Category)
+                .Include(b => b.BlogTags)
+                .ThenInclude(bt=> bt.Tag)
+                .Where(b=> b.IsDeleted ==false).ToListAsync()
+
+
+            };
+
+            if (blogVM.Blogs == null)
+            {
+                return NotFound("melumat yalnisdir");
+            }
+
+            if (blogVM.Categories.Count()<1)
+            {
+                return NotFound("bu categoriyaya aid blog tapilmadi");
+            }
+
+
+            return View(blogVM);
+        }
 
     }
 }

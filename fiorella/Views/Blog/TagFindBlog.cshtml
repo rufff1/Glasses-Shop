@@ -1,4 +1,9 @@
 ﻿
+
+
+
+
+
 @model BlogVM
 
 
@@ -24,13 +29,13 @@
 
                             @foreach (var item in Model.Tags)
                             {
-                               
+
 
                                 <li class="hover-up">
-                                    <a asp-controller="blog" asp-action="tagfindblog" asp-route-id="@item.Id"><i class="fi-rs-cross mr-10"></i>@item.Name</a>
+                                    <a asp-controller="blog" asp-action="TagFindBlog" asp-route-id="@item.Id"><i class="fi-rs-cross mr-10"></i>@item.Name</a>
                                 </li>
 
-                               
+
 
                             }
 
@@ -104,7 +109,7 @@
                                             <img class="border-radius-15" src="assets/imgs/blog/@item.Image1" alt="" />
                                         </a>
                                         <div class="entry-meta">
-                                            <a class="entry-meta meta-2"asp-controller="blog" asp-action="blogdetail" asp-route-id="@item.Id"><i class="fi-rs-heart"></i></a>
+                                            <a class="entry-meta meta-2" asp-controller="blog" asp-action="blogdetail" asp-route-id="@item.Id"><i class="fi-rs-heart"></i></a>
                                         </div>
                                     </div>
                                     <div class="entry-content-2">
@@ -131,22 +136,22 @@
                                 <ul class="pagination">
                                     @if (ViewBag.pageIndex > 1)
                                     {
-                        <li class="page-item"><a class="page-link" asp-controller="blog" asp-action="index" asp-route-pageIndex="@ViewBag.pageIndex-1)">Previous</a></li>
-}
+                                        <li class="page-item"><a class="page-link" asp-controller="blog" asp-action="index" asp-route-pageIndex="@ViewBag.pageIndex-1)">Previous</a></li>
+                                    }
                                     @for (int i = 1; i <= ViewBag.totalpages; i++)
                                     {
-                        <li class="page-item"><a class="page-link" asp-controller="blog" asp-action="index" asp-route-pageIndex="@i">@i</a></li>
-}
+                                        <li class="page-item"><a class="page-link" asp-controller="blog" asp-action="index" asp-route-pageIndex="@i">@i</a></li>
+                                    }
 
                                     @if (ViewBag.pageIndex < ViewBag.totalPages)
                                     {
-                        <li class="page-item"><a class="page-link" asp-controller="blog" asp-action="index" asp-route-pageIndex="@(ViewBag.pageIndex+1)">Next</a></li>
-}
+                                        <li class="page-item"><a class="page-link" asp-controller="blog" asp-action="index" asp-route-pageIndex="@(ViewBag.pageIndex+1)">Next</a></li>
+                                    }
                                 </ul>
                             </nav>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="col-lg-3 primary-sidebar sticky-sidebar">
                     <div class="widget-area">
@@ -166,9 +171,9 @@
 
                                     @if (item.Blogs.Count() > 0)
                                     {
-                                    <li>
-                                        <a href="shop-grid-right.html"> <img src="assets/imgs/theme/icons/@item.Image" alt="" />@item.Name</a><span class="count">@item.Blogs.Count()</span>
-                                    </li>
+                                        <li>
+                                            <a href="shop-grid-right.html"> <img src="assets/imgs/theme/icons/@item.Image" alt="" />@item.Name</a><span class="count">@item.Blogs.Count()</span>
+                                        </li>
 
                                     }
                                 }
@@ -179,20 +184,20 @@
                             <h5 class="section-title style-1 mb-30">Trending Now</h5>
                             @foreach (var item in Model.Blogs.Take(4))
                             {
-                            <div class="single-post clearfix">
-                                <div class="image">
-                                    <img src="assets/imgs/blog/@item.Image1" alt="#" />
+                                <div class="single-post clearfix">
+                                    <div class="image">
+                                        <img src="assets/imgs/blog/@item.Image1" alt="#" />
+                                    </div>
+                                    <div class="content pt-10">
+                                        <h5><a href="shop-product-detail.html">@item.MainTitle</a></h5>
+
+
+                                    </div>
                                 </div>
-                                <div class="content pt-10">
-                                    <h5><a href="shop-product-detail.html">@item.MainTitle</a></h5>
-                                   
-                                  
-                                </div>
-                            </div>
 
                             }
 
-                            
+
                         </div>
                         <div class="sidebar-widget widget_instagram mb-50">
                             <h5 class="section-title style-1 mb-30">Gallery</h5>
@@ -227,7 +232,7 @@
                                 @foreach (var item in Model.Tags)
                                 {
                                     <li class="hover-up">
-                                        <a asp-controller="blog" asp-action="TagFindBlog" asp-route-id="@item.Id"><i class="fi-rs-cross mr-10"></i>@item.Name</a>
+                                        <a asp-controller="blog"><i class="fi-rs-cross mr-10"></i>@item.Name</a>
                                     </li>
 
                                 }
